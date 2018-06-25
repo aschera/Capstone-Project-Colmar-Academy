@@ -1,10 +1,20 @@
-
+/* ********** header ********** */
 header {
+    background-color: $secondary-bg-color;
+    height: 64px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    & img { /* the three mobile icons and the logo*/
+        min-height: 40px; /* 40px is  the best size for fingers to push*/
+        width: auto;
+        padding: 1rem;
+    }
 }
 
-header img { /* the three mobile icons and the logo*/
-    height: 4rem; /* 40px is  the best size for fingers to push*/
-    width: auto;
-}
+
