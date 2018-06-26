@@ -1,4 +1,10 @@
 /* ********** Newsbit ********** */
+.news {
+    display: flex;
+    justify-content: flex-start;
+}
+.news__section:first-child{min-width:60%;}
+.news__section:last-child{min-width:40%;}
 
 .newsbit {
     margin: 16px;
@@ -19,4 +25,35 @@
     & p {
         padding-bottom: 0.8rem;
     }
+
+    &--big{
+        display:none;
+    }
+}
+
+@media all and (min-width: 45em) { 
+
+    .newsbit {
+        display: flex;
+        justify-content: flex-start;
+
+        & img{
+            width:35%;
+            height: 8rem;
+        }
+
+        &__info {
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &--big{
+            display:block;
+            & img{
+                width:100%;
+                height: 21.5rem;
+            }
+        }
+    }    
 }

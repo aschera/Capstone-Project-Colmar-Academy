@@ -49,6 +49,14 @@ a {
 a {
   text-decoration: none; }
 
+@media all and (min-width: 45em) {
+  h1 {
+    font-size: 2.2rem;
+    font-weight: 700; }
+  h2 {
+    font-size: 1rem;
+    font-weight: 600; } }
+
 /* ********** utility ********** */
 .padding-left {
   padding-left: 16px; }
@@ -57,6 +65,14 @@ a {
   padding-right: 16px; }
 
 /* ********** Banner ********** */
+.banner__section:first-child {
+  min-width: 60%;
+  max-width: 60%;
+  padding: 24px; }
+
+.banner__section:last-child {
+  min-width: 40%; }
+
 .banner {
   display: flex;
   flex-direction: column;
@@ -69,10 +85,13 @@ a {
     background: url(../img/banner.jpg);
     background-position: top right;
     background-size: cover; }
-  .banner__heading h1 {
-    padding: 32px 0 16px 0; }
-  .banner__heading h2 {
-    padding: 16px 0 24px 0; }
+  .banner__heading {
+    width: 100%;
+    height: auto; }
+    .banner__heading h1 {
+      padding: 32px 0 16px 0; }
+    .banner__heading h2 {
+      padding: 16px 0 24px 0; }
   .banner__button {
     text-align: center;
     margin-bottom: 32px;
@@ -82,6 +101,22 @@ a {
     font-weight: 600;
     padding: 1rem;
     border-radius: 1px; }
+
+@media all and (min-width: 45em) {
+  .banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+    .banner__heading {
+      min-width: 40%; }
+      .banner__heading h1 {
+        padding-bottom: 0; }
+    .banner__button {
+      font-size: 1rem;
+      font-weight: 500;
+      padding: 0.8rem;
+      border-radius: 1px; } }
 
 /* ********** header ********** */
 .start-learning {
@@ -109,6 +144,16 @@ a {
     font-size: 2rem; }
 
 /* ********** Newsbit ********** */
+.news {
+  display: flex;
+  justify-content: flex-start; }
+
+.news__section:first-child {
+  min-width: 60%; }
+
+.news__section:last-child {
+  min-width: 40%; }
+
 .newsbit {
   margin: 16px;
   padding-bottom: 64px; }
@@ -122,6 +167,25 @@ a {
     padding-top: 16px; }
   .newsbit p {
     padding-bottom: 0.8rem; }
+  .newsbit--big {
+    display: none; }
+
+@media all and (min-width: 45em) {
+  .newsbit {
+    display: flex;
+    justify-content: flex-start; }
+    .newsbit img {
+      width: 35%;
+      height: 8rem; }
+    .newsbit__info {
+      width: 60%;
+      display: flex;
+      flex-direction: column; }
+    .newsbit--big {
+      display: block; }
+      .newsbit--big img {
+        width: 100%;
+        height: 21.5rem; } }
 
 /* ********** Thesis ********** */
 .thesis {
@@ -178,3 +242,15 @@ nav ul li {
 .mobile-menu ul {
   display: flex;
   justify-content: space-around; }
+
+@media all and (min-width: 45em) {
+  /*720px */
+  .mobile-menu {
+    display: none; }
+  .desktop-menu {
+    display: flex;
+    justify-content: flex-end; }
+    .desktop-menu ul li {
+      padding-right: 16px; }
+    .desktop-menu ul li:last-child {
+      padding-right: 24px; } }

@@ -15,3 +15,20 @@ nav ul li {
     display: flex;
     justify-content: space-around;
 }
+
+@media all and (min-width: 45em) { /*720px */
+    .mobile-menu {
+        display: none;
+    }
+    .desktop-menu {
+        display: flex;
+        justify-content: flex-end;
+
+        & ul li {
+            padding-right: 16px;
+        }
+        & ul li:last-child {
+            padding-right: 24px;
+        }
+    } 
+}

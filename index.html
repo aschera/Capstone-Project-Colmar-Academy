@@ -1,142 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Colmar Academy</title>
-        <meta name="description" content="Colmar Academy">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link href="https://fonts.googleapis.com/css?family=Asap:400,400i,500,500i,600,600i,700,700i&amp;subset=latin-ext" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+<head>
+    <meta charset="utf-8">
+    <title>Colmar Academy</title>
+    <meta name="description" content="Colmar Academy">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="./resources/css/reset.css"><!-- resets CSS margins and such. NEEDS to go first!-->
+    <link href="https://fonts.googleapis.com/css?family=Asap:400,400i,500,500i,600,600i,700,700i&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
 
-        <link rel="stylesheet" href="./resources/css/style.css">
-        
-    </head>
+    <link rel="stylesheet" href="./resources/css/reset.css">
+    <!-- resets CSS margins and such. NEEDS to go first!-->
 
-    <!--START header -->
-    <header>
-        <div class="logo">
-            <img src="./resources/img/ic-logo.svg" alt="">
+    <link rel="stylesheet" href="./resources/css/style.css">
+
+</head>
+
+<!--START header -->
+<header>
+    <div class="logo">
+        <img src="./resources/img/ic-logo.svg" alt="">
+    </div>
+
+    <!--START navigation -->
+    <nav>
+        <!--Desktop navigation -->
+        <div class="desktop-menu">
+            <ul>
+                <li>On Campus</li>
+                <li>Online or Companies</li>
+                <li>Sign in</li>
+            </ul>
         </div>
-
-        <!--START navigation -->
-        <nav>
-            <!--Desktop navigation -->
-            <div class="desktop-menu">
-                <ul>
-                    <li>On Campus</li>
-                    <li>Online or Companies</li>
-                    <li>Sign in</li>
-                </ul>
-            </div>
-            <!--Mobile navigation -->
-            <div class="mobile-menu">
-                <ul>
-                    <li>
-                        <a href="#" target="_blank">
+        <!--Mobile navigation -->
+        <div class="mobile-menu">
+            <ul>
+                <li>
+                    <a href="#" target="_blank">
                             <img src="./resources/img/ic-on-campus.svg" alt="on campus link">
                         </a>
-                    </li>
-                    <li>
-                        <a href="#" target="_blank">
+                </li>
+                <li>
+                    <a href="#" target="_blank">
                             <img src="./resources/img/ic-online.svg" alt="online link">
                         </a>
-                    </li>
-                    <li>
-                        <a href="#" target="_blank">
+                </li>
+                <li>
+                    <a href="#" target="_blank">
                             <img src="./resources/img/ic-login.svg" alt="signin link">
                         </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <!--END navigation -->
-    </header>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--END navigation -->
+</header>
 
-    <!--START main -->
-    <main>
-        <!--Main banner -->
-        <section class="banner">
+<!--START main -->
+<main>
+
+    <!--Main banner -->
+    <section class="banner">
+        <div class="banner__section">
             <div class="banner__image">
             </div>
+        </div>
+        <div class="banner__section">   
             <div class="banner__heading padding-left padding-right">
                 <h1>
                     Learn something new everyday
                 </h1>
                 <h2>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Lorem ipsum dolor sit amet, <br> consectetur adipisicing elit.
                 </h2>
-            </div>
-            <div class="padding-left padding-right">
                 <div class="banner__button">
                     Start here
-                </div> 
+                </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!--News gallery -->
-        <section class="news">
-            <div class="newsbit">
-                <img src="./resources/img/information-orientation-mobile.jpg" alt="" >
+    <!--News gallery -->
+    <section class="news">
+
+        <div class="news__section">
+            <div class="newsbit newsbit--big">
+                <img src="./resources/img/information-main.jpg" alt="">
                 <h4 class="padding-left">Orientation date</h4>
                 <p class="padding-left">
                     Tue 10/11 & Wed 10/12: 8am-3pm
                 </p>
                 <a class="padding-left" href="#" target="_blank">Read more</a>
             </div>
+        </div>
 
+        <div class="news__section">
             <div class="newsbit">
-                <img src="./resources/img/information-campus-mobile.jpg" alt="" >
-                <h4 class="padding-left">Our campus</h4>
-                <p class="padding-left">
-                    Find which campus is close by you
-                </p>
-                <a class="padding-left" href="#" target="_blank">Read more</a>
+                <img src="./resources/img/information-orientation-mobile.jpg" alt="">
+                <div class="newsbit__info">
+                    <h4 class="padding-left">Orientation date</h4>
+                    <p class="padding-left">
+                        Tue 10/11 & Wed 10/12: 8am-3pm
+                    </p>
+                    <a class="padding-left" href="#" target="_blank">Read more</a>
+                </div>
             </div>
 
             <div class="newsbit">
-                <img src="./resources/img/information-guest-lecture-mobile.jpg" alt="" >
-                <h4 class="padding-left">Special guest lecture</h4>
-                <p class="padding-left">
-                    Join a keynote with Oliver sack about music in medical treatment
-                </p>
-                <a class="padding-left" href="#" target="_blank">Read more</a>
+                <img src="./resources/img/information-campus-mobile.jpg" alt="">
+                <div class="newsbit__info">
+                    <h4 class="padding-left">Our campus</h4>
+                    <p class="padding-left">
+                        Find which campus is close by you
+                    </p>
+                    <a class="padding-left" href="#" target="_blank">Read more</a>
+                </div>
             </div>
-        </section>
 
-        <section class="start-learning">
-            <h3>Start learning</h3>
-            <ul>
-                <li><a href="#" target="_blank">Software engineering</a></li>
-                <li><a href="#" target="_blank">Computer art</a></li>
-                <li><a href="#" target="_blank">Software engineering</a></li>
-                <li><a href="#" target="_blank">Design</a></li>
-                <li><a href="#" target="_blank">Data</a></li>
-                <li><a href="#" target="_blank">Business</a></li>
-                <li><a href="#" target="_blank">Marketing</a></li>
-            </ul>
-        </section>
+            <div class="newsbit">
+                <img src="./resources/img/information-guest-lecture-mobile.jpg" alt="">
+                <div class="newsbit__info">
+                    <h4 class="padding-left">Special guest lecture</h4>
+                    <p class="padding-left">
+                        Join a keynote with Oliver sack about music in medical treatment
+                    </p>
+                    <a class="padding-left" href="#" target="_blank">Read more</a>
+                </div>
+            </div>
+        </div>
 
-        <section class="thesis">
-            <h3>Thesis exhibits</h3>
-            <video controls="controls">
+    </section>
+
+    <section class="start-learning">
+        <h3>Start learning</h3>
+        <ul>
+            <li><a href="#" target="_blank">Software engineering</a></li>
+            <li><a href="#" target="_blank">Computer art</a></li>
+            <li><a href="#" target="_blank">Software engineering</a></li>
+            <li><a href="#" target="_blank">Design</a></li>
+            <li><a href="#" target="_blank">Data</a></li>
+            <li><a href="#" target="_blank">Business</a></li>
+            <li><a href="#" target="_blank">Marketing</a></li>
+        </ul>
+    </section>
+
+    <section class="thesis">
+        <h3>Thesis exhibits</h3>
+        <video controls="controls">
                 <source src="./resources/videos/thesis.mp4" type="video/mp4" />
                 Your browser does not support HTML5 video.
                 </video>
-        </section>
+    </section>
 
-    </main>
+</main>
 
-    <!--START footer -->
-    <footer>
-            <p>
-            &#169; 2016 Colmar Academy. All rights reserved
-            </p>
-    </footer>
+<!--START footer -->
+<footer>
+    <p>
+        &#169; 2016 Colmar Academy. All rights reserved
+    </p>
+</footer>
 
-    <body>
+<body>
 
-    </body>
+</body>
+
 </html>
