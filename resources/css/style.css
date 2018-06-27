@@ -171,7 +171,8 @@ a {
       color: black;
       font-size: 1.2rem;
       font-weight: 600;
-      padding-top: 16px; }
+      padding-top: 16px;
+      padding-left: 16px; }
     .start-learning ul {
       margin: 0;
       padding: 0;
@@ -188,9 +189,9 @@ a {
         padding: 0;
         display: flex;
         flex-flow: column;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
+        justify-content: flex-start;
+        align-content: flex-start;
+        align-items: flex-start;
         margin-bottom: 32px;
         margin-right: 32px; }
         .start-learning ul li img {
