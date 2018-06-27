@@ -32,3 +32,10 @@
         font-size: 2rem;
     }
 }
+
+
+@media all and (min-width: 45em) {
+    .start-learning {
+        background-color: rgb(233,234,234);
+    }
+}
