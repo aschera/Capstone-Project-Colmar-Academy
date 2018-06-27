@@ -9,12 +9,17 @@ header {
     position: fixed;
     top: 0;
     left: 0;
+    overflow: hidden;
 
     & img { /* the three mobile icons and the logo*/
         min-height: 40px; /* 40px is  the best size for fingers to push*/
         width: auto;
-        padding: 1rem;
+        padding: 0.7rem;
     }
+}
+
+.logo {
+    overflow: hidden;
 }
 
 

@@ -8,13 +8,6 @@
     margin-top:64px;
     background-color: $main-bg-color;
 
-    &__section:first-child{
-        min-width:60%;
-    }
-    &__section:last-child{
-        min-width:40%; 
-    }
-
     &__image{
         width:100%;
         height:15rem;
@@ -28,24 +21,25 @@
         height: auto;
         margin-right:16px;
 
-        & h1 {padding: 32px 0 16px 0;}
+        & h1 {padding: 32px 16px 16px 0;}
         & h2 {padding: 16px 0 24px 0;}
     }
 
     &__button {
-        margin: 0 auto;
+        
         display: flex;
+        
 
         & button {
             background-color: $button-color-1;
             color: $main-bg-color;
             font-size: 1.6rem;
             font-weight: 600;
-            padding: 0.8rem;
+            padding: 0.8rem 0;
             border: none;
-            margin-right:16px;
+            margin-right:32px;
             margin-bottom: 32px;
-            width: 20rem;
+            width: 100%;
         }
     }
 }
