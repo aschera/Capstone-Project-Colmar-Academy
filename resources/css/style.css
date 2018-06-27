@@ -325,27 +325,38 @@ a {
         justify-content: center;
         align-items: flex-start;
         align-content: center; }
-        .smaller-thesis .newsbit__info p {
-          font-size: 0.7rem; }
-        .smaller-thesis .newsbit__info h5 {
-          font-size: 1rem;
-          font-weight: bold;
-          padding-top: 16px; }
   .main-thesis {
     margin: 32px 24px; }
   .thesis {
-    flex-direction: row; }
+    flex-direction: row;
+    border-bottom: 1px solid #e9eaea; }
+    .thesis p {
+      font-size: 0.7rem;
+      width: 100%;
+      padding-top: 8px;
+      padding-right: 16px; }
+    .thesis h5 {
+      font-size: 1rem;
+      font-weight: bold;
+      padding-top: 24px; }
     .thesis__heading {
       text-align: center; } }
 
 /* ********** footer ********** */
 footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  align-content: center;
-  margin: 16px; }
+  margin-top: 16px; }
+  footer p {
+    float: left;
+    margin-left: 24px; }
+  footer ul {
+    float: right;
+    margin-bottom: 32px;
+    margin-right: 24px;
+    overflow: hidden; }
+    footer ul li {
+      display: inline;
+      font-size: 1rem;
+      padding-left: 1rem; }
 
 @media all and (min-width: 45em) {
   .grid60 {

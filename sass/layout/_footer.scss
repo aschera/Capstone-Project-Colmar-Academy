@@ -1,11 +1,24 @@
 /* ********** footer ********** */
 
 footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
+    margin-top: 16px;
 
-    margin: 16px;
+    & p {
+        float: left; 
+        margin-left: 24px;
+        
+    }
+
+    & ul {
+        float:right; 
+        margin-bottom: 32px;
+        margin-right: 24px;
+        overflow: hidden;
+        
+        & li {
+            display:inline;
+            font-size: 1rem;
+            padding-left: 1rem;
+        }
+    }
 }
