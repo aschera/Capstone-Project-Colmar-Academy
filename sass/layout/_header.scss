@@ -11,6 +11,7 @@ header {
     top: 0;
     left: 0;
     overflow: hidden;
+    border-bottom: 1px solid rgb(233,234,234);
 
     & img { /* the three mobile icons and the logo*/
         min-height: 44px; /* 40px is  the best size for fingers to push*/

@@ -25,6 +25,10 @@ nav ul li {
 
 /* ********** big screens ********** */
 @media all and (min-width: 45em) { 
+    a{
+        color:black;
+    }
+
     .mobile-menu {
         display: none;
     }
@@ -34,7 +38,6 @@ nav ul li {
         
         & ul li {
             padding-right: 16px;
-            
         }
         & ul li:last-child {
             padding-right: 24px;
