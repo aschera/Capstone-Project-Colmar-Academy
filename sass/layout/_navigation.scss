@@ -5,6 +5,11 @@ nav {
     width: 80%;
     overflow: hidden;
 }
+
+nav ul {
+    overflow: hidden;
+}
+
 nav ul li {
     display: inline;
 }
@@ -26,9 +31,10 @@ nav ul li {
     .desktop-menu {
         display: flex;
         justify-content: flex-end;
-
+        
         & ul li {
             padding-right: 16px;
+            
         }
         & ul li:last-child {
             padding-right: 24px;

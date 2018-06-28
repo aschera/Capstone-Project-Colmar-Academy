@@ -2,7 +2,7 @@
 /* ********** footer ********** */
 
 footer{
-    margin-top: 16px;
+    margin: 16px 0;
 
     & p {
         float: left; 
@@ -10,15 +10,25 @@ footer{
     }
 
     & ul {
+        
         float:right; 
         margin-bottom: 32px;
         margin-right: 24px;
         overflow: hidden;
         
         & li {
-            display:inline;
+            display: none;
             font-size: 1rem;
             padding-left: 1rem;
+        }
+    }
+}
+
+/* ********** big screens ********** */
+@media all and (min-width:45em) {
+    footer{
+        & ul li {
+            display: inline;  
         }
     }
 }
