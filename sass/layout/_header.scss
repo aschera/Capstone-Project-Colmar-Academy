@@ -1,3 +1,4 @@
+/* ***************************** */
 /* ********** header ********** */
 header {
     background-color: $secondary-bg-color;
@@ -12,7 +13,7 @@ header {
     overflow: hidden;
 
     & img { /* the three mobile icons and the logo*/
-        min-height: 40px; /* 40px is  the best size for fingers to push*/
+        min-height: 44px; /* 40px is  the best size for fingers to push*/
         width: auto;
         padding: 0.7rem;
     }

@@ -1,3 +1,4 @@
+/* ***************************** */
 /* ********** Thesis ********** */
 
 .thesis {
@@ -8,7 +9,6 @@
     align-content: center;
     margin-bottom: 24px;
     
-
     & h3 {
         margin-top: 32px;
         margin-bottom: 16px;
@@ -23,19 +23,35 @@
 .smaller-thesis {
     display: none;
 }
+/* ********** big screens ********** */
 
 @media all and (min-width: 45em) {
 
+    .thesis {
+        flex-direction: row;
+        align-items: flex-start;
+        border-bottom: 1px solid $border-color;
+
+        & p { font-size: 0.7rem; width: 100%; padding-top: 8px; padding-right:16px;}
+        & h5 {font-size:1.7rem; font-weight: bold; padding-top: 24px;}
+
+        &__heading {text-align:center;}
+    }
+
+    .main-thesis {
+        margin: 32px 24px;
+    }
 
     .smaller-thesis {
-        display: block;
+        margin-top: 32px;
+
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        align-content: flex-start;
-        align-items: flex-start;
         
         & .newsbit {
+            display: flex;
+            flex-direction: row;
             border: none;
             padding:16px;
             width:100%;
@@ -43,7 +59,7 @@
 
             &__image {
                 width:35%;
-                height: auto;
+                height: 9rem;
                 padding:0;
                 display: flex;
                 flex-direction: column;
@@ -57,25 +73,7 @@
                 justify-content: center;
                 align-items: flex-start;
                 align-content: center;
-
             }
         }
-    }
-
-    .main-thesis {
-        margin: 32px 24px;
-    }
-
-    .thesis {
-        flex-direction: row;
-        border-bottom: 1px solid $border-color;
-
-        & p { font-size: 0.7rem; width: 100%; padding-top: 8px; padding-right:16px;}
-        & h5 {font-size:1rem; font-weight: bold; padding-top: 24px;}
-
-        &__heading {
-            text-align:center;
-        }
-
     }
 }
