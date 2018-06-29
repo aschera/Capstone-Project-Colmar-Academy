@@ -23,11 +23,26 @@ nav ul li {
     justify-content: space-around;
 }
 
+a{
+    color:black;
+}
+
+a:hover {
+    border-bottom: 2px solid rgb(74,74,74);
+}
+
+a img {
+    border-bottom: 2px solid transparent;
+}
+
+a img:hover {
+        border-bottom: 2px solid rgb(74,74,74);
+}
+
+
 /* ********** big screens ********** */
 @media all and (min-width: 45em) { 
-    a{
-        color:black;
-    }
+
 
     .mobile-menu {
         display: none;

@@ -44,9 +44,18 @@
             margin-right:32px;
             margin-bottom: 32px;
             width: 100%;
+            cursor: pointer;
+            border: 1px solid transparent;
+        }
+
+        & button:hover {
+            background-color: $main-bg-color;
+            color: $button-color-1;
+            border: 1px solid $button-color-1;
         }
     }
 }
+
 
 /* ********** big screens ********** */
 

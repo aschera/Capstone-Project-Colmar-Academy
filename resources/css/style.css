@@ -22,7 +22,6 @@ h1,
 h2,
 h3,
 h4,
-h5,
 p,
 a {
   font-family: 'Asap', 'Helvetica', sans-serif;
@@ -47,12 +46,13 @@ h4 {
   font-weight: 600; }
 
 h5 {
-  font-size: 1.7rem;
+  font-size: 1.6rem;
+  line-height: 1.2;
   font-weight: 500; }
 
 p,
 a {
-  font-family: 'Ropa Sans', 'Helvetica', sans-serif;
+  word-spacing: 1px;
   font-size: 1rem; }
 
 a {
@@ -83,6 +83,12 @@ a {
 
 .padding-right {
   padding-right: 16px; }
+
+.padding-top {
+  padding-top: 16px; }
+
+.margin-left {
+  margin-left: 16px; }
 
 /* ***************************** */
 /* ********** Banner ********** */
@@ -120,7 +126,13 @@ a {
       border: none;
       margin-right: 32px;
       margin-bottom: 32px;
-      width: 100%; }
+      width: 100%;
+      cursor: pointer;
+      border: 1px solid transparent; }
+    .banner__button button:hover {
+      background-color: #d8d8d8;
+      color: #4a4a4a;
+      border: 1px solid #4a4a4a; }
 
 /* ********** big screens ********** */
 @media all and (min-width: 45em) {
@@ -157,11 +169,12 @@ a {
   .start-learning ul {
     padding: 0;
     margin: 0;
-    margin-bottom: 32px;
+    padding-bottom: 31px;
     list-style: none;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around; }
+    justify-content: space-around;
+    border-bottom: 1px solid #e9eaea; }
     .start-learning ul li {
       width: 100%;
       background-color: #d8d8d8;
@@ -186,11 +199,11 @@ a {
       margin-bottom: 32px;
       margin-top: 32px; }
     .start-learning a {
-      color: black;
-      font-size: 1.2rem;
-      font-weight: 600;
-      padding-top: 16px;
-      padding-left: 16px; }
+      border-bottom: 1px solid transparent;
+      font-size: 1rem; }
+    .start-learning a:hover {
+      border-bottom: 2px solid #4a4a4a;
+      font-size: 1rem; }
     .start-learning ul {
       margin: 0;
       padding: 0;
@@ -229,19 +242,29 @@ a {
 /* ********** Newsbit ********** */
 .news {
   display: flex;
-  justify-content: flex-start; }
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center; }
 
 .newsbit {
-  margin: 16px;
-  padding-bottom: 64px; }
-  .newsbit h4 {
+  margin: 0;
+  padding: 32px 16px; }
+  .newsbit:nth-child(1) {
     padding-top: 16px; }
+  .newsbit:nth-child(3) {
+    border-bottom: 1px solid #e9eaea;
+    padding-bottom: 31px; }
+  .newsbit__info .newsbit h5 {
+    padding-top: 16px;
+    font-weight: 700; }
   .newsbit p {
-    padding-bottom: 0.8rem; }
+    padding: 8px 16px; }
+  .newsbit .readmore {
+    color: blue;
+    border-bottom: none; }
   .newsbit--big {
     display: none; }
-  .newsbit:hover {
-    background-color: #e9eaea; }
   .newsbit__image {
     overflow: hidden; }
 
@@ -279,6 +302,9 @@ a {
     .newsbit:nth-child(2) {
       border-bottom: 4px double #e9eaea;
       border-top: 4px double #e9eaea; }
+    .newsbit:hover {
+      background-color: #e9eaea;
+      cursor: pointer; }
     .newsbit h5 {
       padding-top: 24px; }
     .newsbit a {
@@ -291,7 +317,8 @@ a {
       align-items: stretch; }
       .newsbit__image img {
         width: 100%;
-        height: auto; }
+        height: auto;
+        max-height: 128px; }
     .newsbit__image--big {
       width: 100%;
       display: flex;
@@ -321,10 +348,10 @@ a {
       .newsbit--big:hover {
         background-color: #e9eaea; } }
 
-/* ********** medium screens ********** */
-@media all and (min-width: 46em) and (max-width: 65em) {
-  .newsbit__image {
-    height: 8rem; } }
+/* ********** very big screens ********** */
+@media all and (min-width: 1200px) {
+  .newsbit__image img {
+    max-height: 220px; } }
 
 /* ***************************** */
 /* ********** Thesis ********** */
@@ -457,6 +484,8 @@ header {
 
 .logo {
   overflow: hidden; }
+  .logo a img:hover {
+    border-bottom: 2px solid transparent; }
 
 /* ******************************* */
 /* ********** navigation********** */
@@ -477,10 +506,20 @@ nav ul li {
   display: flex;
   justify-content: space-around; }
 
+a {
+  color: black; }
+
+a:hover {
+  border-bottom: 2px solid #4a4a4a; }
+
+a img {
+  border-bottom: 2px solid transparent; }
+
+a img:hover {
+  border-bottom: 2px solid #4a4a4a; }
+
 /* ********** big screens ********** */
 @media all and (min-width: 45em) {
-  a {
-    color: black; }
   .mobile-menu {
     display: none; }
   .desktop-menu {
