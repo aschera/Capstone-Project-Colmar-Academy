@@ -32,10 +32,9 @@
 
     &__button {  
         display: flex;
-        
 
         & button {
-            background-color: $button-color-1;
+            background: $button-color-1;
             color: $main-bg-color;
             font-size: 1.6rem;
             font-weight: 600;
@@ -46,12 +45,15 @@
             width: 100%;
             cursor: pointer;
             border: 1px solid transparent;
+            transition: all 0.2s ease-in;
         }
 
+
         & button:hover {
-            background-color: $main-bg-color;
+            background: rgb(255, 255, 255);
             color: $button-color-1;
             border: 1px solid $button-color-1;
+            box-shadow:0 0.5rem 1rem rgba($text-color-dark, 0.2); 
         }
     }
 }
